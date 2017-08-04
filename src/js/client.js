@@ -3,8 +3,8 @@
  */
 import React from "react";
 import ReactDOM from "react-dom";
-import Layout  from "./componenets/layout.js";
+import Main  from "./componenets/Main.js";
 
 const app = document.getElementById("app");
-ReactDOM.render(<Layout/>, app);
+ReactDOM.render(<Main/>, app);
 
