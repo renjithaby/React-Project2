@@ -50,11 +50,12 @@ export default  class Main extends React.Component{
 
     render() {
         return (
-
+            <Router>
                 <div>
                 <Header/>
                 <MainBody/>
                 </div>
+            </Router>
         );
 
     };

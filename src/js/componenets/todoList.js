@@ -36,7 +36,7 @@ export default class todoList extends React.Component{
                     {
                         this.props.todoList.map((item) =>
 
-                            <ListItem  key ={item.id}item = {item} removeFromToDoList= {this.props.removeFromToDoList} updateTodoList ={this.props.updateTodoList} />
+                            <ListItem  key ={item.id} item = {item} removeFromToDoList= {this.props.removeFromToDoList} updateTodoList ={this.props.updateTodoList} />
 
                         )
 

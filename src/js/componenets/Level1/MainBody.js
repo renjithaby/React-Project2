@@ -19,22 +19,36 @@ export default  class MainBody extends React.Component
 		/*this.state = {
 		 title: "Welcome",
 		 };*/
+
+
 	}
+
+    addTodoItem(val){
+        var list = this.state.todoList;
+        list.push({id:list.length ,  title :val , status : "active"});
+        this.setState({todoList : list});
+        console.log(this.state.todoList);
+    }
+
+    updateTodoItem(id){
+        var list = this.state.todoList;
+        list[id].status = "completed";
+        this.setState({todoList : list});
+    }
 
 
 	render()
 	{
 
 		return (
-			<Router>
+
             <div>
 	         <Switch>
-			<Route path="/Home" component={Todos}/>
+			<Route path="/Home" component={()=> < Todos addTodoItem = {this.addTodoItem.bind(this)} updateTodoItem = {this.updateTodoItem.bind(this)} todoList = {this.state.todoList}/> }/>
 			<Route path="/Completed"  component = {FinishedTodos}/>
 			<Route component={FinishedTodos}/>
 			</Switch>
             </div>
-            </Router>
 		);
 	}
 }

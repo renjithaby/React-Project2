@@ -20,7 +20,7 @@ export default  class NavBar extends React.Component{
      //console.log(Route);
      console.log(Link);
         return (
-                <
+
                 <div>
                 <nav class="navbar navbar-default">
                     <div class="container-fluid">
