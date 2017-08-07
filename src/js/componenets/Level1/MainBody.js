@@ -45,8 +45,8 @@ export default  class MainBody extends React.Component
             <div>
 	         <Switch>
 			<Route path="/Home" component={()=> < Todos addTodoItem = {this.addTodoItem.bind(this)} updateTodoItem = {this.updateTodoItem.bind(this)} todoList = {this.state.todoList}/> }/>
-			<Route path="/Completed"  component = {FinishedTodos}/>
-			<Route component={FinishedTodos}/>
+			<Route path="/Completed"  component = {()=> <FinishedTodos todoList = {this.state.todoList} /> }/>
+			<Route component = {()=> <Todos addTodoItem = {this.addTodoItem.bind(this)} updateTodoItem = {this.updateTodoItem.bind(this)} todoList = {this.state.todoList}/> }/>
 			</Switch>
             </div>
 		);

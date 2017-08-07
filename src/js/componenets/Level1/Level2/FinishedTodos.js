@@ -10,7 +10,22 @@ export default  class FinishedTodos extends React.Component
 	render()
 	{
 		return (
-			<h1> Im in the Finished Todos </h1>
+            <div>
+                <ul>
+                    {
+                        this.props.todoList.map((item) =>
+                         item.status === "completed" ?
+                        <li key = {item.id}>
+                            <span> {item.title}  </span>
+                        </li>: null
+
+
+
+                        )
+
+                        }
+                </ul>
+            </div>
 		);
 	}
 }
