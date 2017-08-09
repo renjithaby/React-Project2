@@ -19,7 +19,7 @@ export default  class NavBar extends React.Component{
     }
     render() {
      //console.log(Route);
-     console.log(Link);
+     //console.log(Link);
         return (
 
                 <div>

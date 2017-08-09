@@ -23,9 +23,14 @@ export default class TodoList extends React.Component{
 
 
 updateTodoItem(event){
-    console.log(event.target.value);
+    //console.log(event.target.value);
     this.props.updateTodoItem(event.target.value)
 }
+deleteTodoItem(event){
+    //console.log(event.target.value);
+    this.props.deleteTodoItem(event.target.value)
+}
+
 
 
     /*
@@ -48,7 +53,7 @@ updateTodoItem(event){
                                         <span style={[ styles.span ]}> {item.title}  </span>
 
                                        {item.status === "active"? < button style={[ styles.listButton ]} type ="button" value ={item.id} class = "btn primary" onClick = {this.updateTodoItem.bind(this)} > complete </button> : null}
-
+                                        <button style={[ styles.listButton ]} type ="button" value ={item.id} class = "btn-primary" onClick = {this.deleteTodoItem.bind(this)}> delete </button>
                                     </li>
 
                         )

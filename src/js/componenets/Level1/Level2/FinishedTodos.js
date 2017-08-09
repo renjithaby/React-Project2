@@ -20,13 +20,9 @@ export default  class FinishedTodos extends React.Component
                          item.status === "completed" ?
                         <li key = {item.id} class = "list-group-item">
                             <span> {item.title}  </span>
-                        </li>: null
+                        </li>: null)
 
-
-
-                        )
-
-                        }
+                    }
                 </ul>
             </div>
             </div>
@@ -50,6 +46,6 @@ var styles = {
     center : {
         marginLeft: "auto",
         marginRight: "auto"
-    },
+    }
 
 };

@@ -23,7 +23,7 @@ export default  class Todos extends React.Component
              </div>
             <div class="row" style={[ styles.section ]}>
                 <div class="col">
-                    <TodoList todoList = {this.props.todoList} updateTodoItem = {this.props.updateTodoItem.bind(this)}/>
+                    <TodoList todoList = {this.props.todoList} updateTodoItem = {this.props.updateTodoItem.bind(this)} deleteTodoItem = {this.props.deleteTodoItem.bind(this)}/>
                     <div class="card">
                     <div class = "card-block">
                     <h1> hell0</h1>

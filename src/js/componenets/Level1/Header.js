@@ -10,12 +10,6 @@ export default  class Header extends React.Component
 	constructor()
 	{
 		super();
-		this.list = [];
-		this.state = {todoList: []};
-
-		/*this.state = {
-		 title: "Welcome",
-		 };*/
 	}
 
 

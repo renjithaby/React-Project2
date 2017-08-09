@@ -12,8 +12,6 @@ import { HashRouter } from 'react-router-dom'
 export default  class Main extends React.Component{
     constructor() {
         super();
-        this.list = [];
-        this.state = {title: "my todos", todoList: []};
 
         /*this.state = {
          title: "Welcome",

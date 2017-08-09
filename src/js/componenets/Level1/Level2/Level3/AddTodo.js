@@ -25,8 +25,8 @@ export default  class AddTodo extends React.Component
     }
 
     addTodoToList(event){
-        console.log("adding teh todos");
-        console.log(this.refs);
+        //console.log("adding teh todos");
+        //console.log(this.refs);
         this.props.addTodoItem(this.refs.todo.value);
     }
 
