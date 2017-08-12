@@ -18,9 +18,16 @@ export function deleteTodo(id){
     });
 }
 
-export function updateTodo(id){
+export function updateTodo(id) {
     Dispatcher.dispatch({
-        type :"UPDATE_TODO",
+        type: "UPDATE_TODO",
         id
     });
 }
+
+export function updateTodoFilter(){
+    Dispatcher.dispatch({
+        type :"UPDATE_TODO_FILTER"
+    });
+}
+

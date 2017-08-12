@@ -40,7 +40,7 @@ class TodoStore extends EventEmitter{
     }
 
     handleActions(action){
-
+        console.log("update the filter3");
         switch (action.type){
 
             case "CREATE_TODO" :

@@ -48,6 +48,7 @@ deleteTodoItem(event){
                     {
                         this.props.todoList.map((item) =>
 
+
                                     <li key = {item.id} class = "list-group-item">
 
                                         <span style={[ styles.span ]}> {item.title}  </span>
